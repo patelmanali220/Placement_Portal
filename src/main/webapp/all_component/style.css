@@ -1,0 +1,51 @@
+/* navbar */
+.bg-custom{
+	background: #184d47!important;
+}
+.w{
+	color:#eedd4d;
+}
+
+.tex{
+	font-size: 48px; /* Large font size for visibility */
+    font-weight: bold; /* Bold font weight for impact */
+    color: #eebb4d; /* Custom color */
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3); /* Shadow effect */
+    /* Additional styling for a more unique look */
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar .nav-item .navlink.active{
+	font-size: 20px;
+	color: white;
+}
+
+.navbar .nav-item:hover .nav-link{
+	background: #184d40;
+	color: black;
+	border-radius: 10px;
+}
+
+.btn:hover{
+	background: #eebb4d;
+	color: black;
+	border-radius: 10px;
+}
+/* footer */
+.text-custom-color{
+	color:#eedd4d;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+}
+
+.btn-custom{
+  background-color: #184d47;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}

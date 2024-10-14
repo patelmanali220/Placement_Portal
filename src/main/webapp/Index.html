@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      Career Connect : Saffrony Institute Of Technology
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#204584">
+    <meta name="msapplication-navbutton-color" content="#204584">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#204584">
+    <link rel="icon" href="img\slogo.jpg">
+    <link rel="stylesheet" href="css/main2.css">
+    <style> .table100 {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table100 th, .table100 td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        .table100 th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .download-link {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        #placement-synopsis {
+            display: flex;
+            justify-content: space-between;
+        }
+        #placement-detail-1 {
+            flex: 1;
+        }
+        #placement-chart {
+            flex: 1;
+        }
+        #placement-chart canvas {
+            display: block;
+            margin: auto;
+        }
+        .im img {
+            display: none;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 35%;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo-holder">
+        <div id="logo" style="height:50px; display: flex; align-items: center;">
+          <img src="img\slogo.jpg" style="height: 188%; width: auto;">
+        </div>
+      </div>
+      <div id="nav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#infrastructure">Infrastructure</a>
+        <a href="#placement-record">Placement Record</a>
+        <a href="Signup.jsp">Register</a>
+        <a href="#footer">Contact Us</a>
+         <a href="login.jsp">Login</a>
+      </div>
+
+      <div id="nav-mobile" class="nav">
+        <a href="javascript:void(0)" onclick="$('#mobile-menu').css('display','flex')"  class="blue-background">Menu</a>
+      </div>
+    </div>
+    <div id="home" class="section">
+      <img src="img/background.svg" class="home-background">
+      <div class="home-text">
+        <span class="heading">Career Connect</span><br>
+        <h2 style="max-width: 400px">Find out what you like doing best and get someone to pay you for doing it.</h2><br>
+        <a href="saffrony-alumni-students-website-1.pdf" target="_blank"  class="download-link">Alumni-Students&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+        <br>
+        <a href="Campus-recruitment-test-preparation-sessions.pdf" target="_blank" class="download-link">CRT-Prep&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+      </div>
+      <div class="employees-image" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <img src="img/team.png" style="width:70%;">
+      </div>
+    </div>
+  
+    <div id="infrastructure" class="section">
+      <div class="text-div">
+          <h1>Infrastructure</h1>
+          <div class="about-img">
+            <img src="https://static.zollege.in/public/college_data/images/appImage/1647513990img4077.jpg?tr=h-250,w-400,c-force">
+          </div><br>
+      </div>
+      <div class="icons-div">
+        <a href="https://www.saffrony.ac.in/life-at-saffrony/infrastructure-amenities/campus/" class="infra-icon">
+          <img src="https://www.saffrony.ac.in/media/2422/campus.jpg">
+          <span>CAMPUS</span>
+        </a>
+        <a href="https://www.saffrony.ac.in/life-at-saffrony/infrastructure-amenities/hostel/" class="infra-icon">
+          <img src="https://www.saffrony.ac.in/media/2413/hostel.jpg">
+          <span>HOSTEL</span>
+        </a>
+        <a href="https://www.saffrony.ac.in/life-at-saffrony/infrastructure-amenities/canteen/" class="infra-icon">
+          <img src="https://www.saffrony.ac.in/media/2411/canteen.jpg">
+          <span>CANTEEN</span>
+        </a>
+        <a href="https://www.saffrony.ac.in/life-at-saffrony/infrastructure-amenities/open-air-theatre/" class="infra-icon">
+          <img src="https://www.saffrony.ac.in/media/2407/openair-theatre.jpg">
+          <span>Open air theatre</span>
+        </a>
+        <a href="https://www.saffrony.ac.in/life-at-saffrony/infrastructure-amenities/laboratories/" class="infra-icon">
+          <img src="https://www.saffrony.ac.in/media/2423/laboratories.jpg">
+          <span>LAB</span>
+        </a>
+        <a href="https://www.saffrony.ac.in/life-at-saffrony/infrastructure-amenities/library/" class="infra-icon">
+          <img src="https://www.saffrony.ac.in/media/2401/library.jpg">
+          <span>LIBRARY</span>
+        </a>
+      </div>
+    </div>
+
+
+<div id="placement-record" class="section">
+    <h1>Placement Statistics</h1>
+    <div id="placement-synopsis">
+        <div id="placement-detail-1">
+            <div class="table-container">
+                <div class="table100 ver5 m-b-110">
+                    <div class="table100-body js-pscroll">
+                        <table style="width: 100%;">
+                            <caption style="font-size: 25px; font-weight: none; text-align: center;  background: #1455bd;
+background: -webkit-linear-gradient(to right bottom, #1455bd, #72e552, #fcff42);
+background: linear-gradient(to right bottom, #1455bd, #72e552, #fcff42);color: white; padding: 7px; text-transform: uppercase; width: 100%;">Placement Statistics</caption>
+                            <tbody>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">Highest Package</td>
+                                    <td class="cell100 column2">18 lpa</td>
+                                    <td class="cell100 column3"></td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">Average Package</td>
+                                    <td class="cell100 column2">2.40 lpa</td>
+                                    <td class="cell100 column3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<hr>
+    <div>
+        <ul>
+            <li>
+                <button id="show-image-button" class="download-link">Alumni Working Premier Companies</button>
+               <div class="im"> <img id="my-image" src="img/Alumni Working Premier Companies.jpg" alt="Alumni Working Premier Companies"></div>
+            </li><br>
+            <li>
+                <button id="show-image-button1" class="download-link">Students Placed</button>
+                <div class="im"><img id="my-image1" src="img/Students Placed.jpg" alt="Students Placed"></div>
+            </li><br>
+            <li>
+                <button id="show-image-button2" class="download-link">Industry Connections</button>
+                <div class="im"><img id="my-image2" src="img/Industry Connections.jpg" alt="Industry Connections"></div>
+            </li><br>
+        </ul>
+    </div>
+</div>
+
+	  <div class="container">
+      <h1 style="text-align: center;">
+        Placement Companies
+      </h1>
+      <div id="p1">
+        <img src="img\p1.jpg"   alt="Sample Image">
+    </div>
+
+    <div id="slider" style="margin-bottom: 50px;">
+      <figure>
+      <img src="img\i1.jpg">
+      <img src="img\i2.jpg">
+      <img src="img\i3.jpg" >
+      <img src="img\i4.jpg" >
+      <img src="img\i7.jpg">
+      <img src="img\i9.jpg">
+
+
+      </figure>
+    </div>
+    </div>
+  
+    <div id="footer">
+      <div id="footer-logo">
+      </div>
+      <div id="footer-container-up">
+        <div id="footer-heading">
+          Register
+        </div>
+        <input type="text" id="footer-input" placeholder="Enter your e-mail">
+        </input>
+        <a href="" id="footer-button">
+          SUBSCRIBE
+        </a>
+      </div>
+      <div id="footer-container-down">
+        <div id="footer-address">
+          <span class="footer-subsection-heading">
+            ADDRESS
+          </span>
+          <div class="footer-subsection-text">
+            Saffrony Institute Of Technology,
+            Near Shanku's Water Park
+            Ahmedabad - Mehsana Highway
+            At & Post : Linch
+            District : Mehsana, PIN - 384435.
+          </div>
+        </div>
+        <div id="footer-quick-links">
+          <span class="footer-subsection-heading">
+            QUICK LINKS
+          </span>
+          <div class="footer-subsection-text">
+            <a href="">Brochure</a></br>
+            <a href="">Faculty Members</a></br>
+            <a href="">Administrative body</a></br>
+            <a href="">Mentor Institute</a></br>
+            <a href="">Anti ragging</a></br>
+            <a href="">Notifications</a></br>
+            <a href="">News and events</a></br>
+          </div>
+        </div>
+        <div id="footer-explore">
+          <span class="footer-subsection-heading">
+            EXPLORE
+          </span>
+          <div class="footer-subsection-text">
+            <a href="">Facilities</a></br>
+            <a href="">Media Club (MC)</a></br>
+            <a href="">Reading Club</a></br>
+            <a href="">Robotics Club</a></br>
+            <a href="">Technical Club</a></br>
+            <a href="">How to reach SIT</a></br>
+          </div>
+        </div>
+        <div id="footer-contact-us">
+          <span class="footer-subsection-heading">
+            CONTACT US
+          </span>
+  
+          <div class="footer-subsection-text">
+            <a href=""> E-mail: info@saffrony.ac.in</a></br>
+            <a href=""> Web: www.saffrony.ac.in</a></br>
+            <a href=""> Mo. For Admin / Accounts: 9879616838,</a></br>
+            <a href="">For Placement / Admission: 8140070003,</a></br>
+            <a href="">For Admission: 7046461000,</a></br>
+            <a href="">Phone : (02762) 285721.</a></br>
+          </div>
+          <div id="footer-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-at"></i>
+          </div>
+        </div>
+      </div>
+      <div id="footer-credits">
+        Copyright &copy; 2024 Saffrony Institute Of Technology. Developed by SIT Web Team.
+      </div>
+    </div>
+
+    <div class="complete-page-overlay hidden">
+    <div class="form-box login-box">
+      <div class="close-bar">
+        <a href="javascript:void(0)" onclick="closeForm()"><i class="fas fa-times"></i></a>
+      </div>
+
+      <div class="tab-bar">
+        <div class="tab active" onclick="switchToTabPane(this, 0)" >Admin</div>
+        <div class="tab" onclick="switchToTabPane(this, 1)" >Students</div>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane" data-paneid="0" style="padding: 40px 50px; text-align: center;">
+          <img src="img/enterprise.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
+          <input type="textbox" class="textbox" placeholder="Admin Email" style="margin: 10px 0px; width: 100%;">
+          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+          <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;" value="Login">
+        </div>
+        <div class="tab-pane" data-paneid="1" style="display: none; padding: 40px 50px; text-align: center;">
+          <img src="img/graduate.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
+          <input type="textbox" class="textbox" placeholder="Student Email" style="margin: 10px 0px; width: 100%;">
+          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+          <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;" value="Login">
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div id="mobile-menu">
+      <a href="#home" onclick="$('#mobile-menu').hide()">Home</a>
+
+      <a href="#infrastructure" onclick="$('#mobile-menu').hide()">Infrastructure</a>
+      <a href="#placement-record" onclick="$('#mobile-menu').hide()">Placement Record</a>
+
+      <a href="Signup.jsp" onclick="$('#mobile-menu').hide()">Register</a>
+      <a href="#footer" onclick="$('#mobile-menu').hide()">Contact Us</a>
+     <a href="login.jsp" onclick="$('#mobile-menu').hide()"  class="blue-background">Login</a>
+    </div>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var buttons = document.querySelectorAll('.download-link');
+        var images = {
+            'show-image-button': 'my-image',
+            'show-image-button1': 'my-image1',
+            'show-image-button2': 'my-image2'
+        };
+
+        buttons.forEach(function(button) {
+            var clickCount = 0;
+            button.addEventListener('click', function() {
+                clickCount++;
+                var imageId = images[button.id];
+                var image = document.getElementById(imageId);
+                if (clickCount === 1) {
+                    image.style.display = 'block';
+                } else if (clickCount === 2) {
+                    image.style.display = 'none';
+                    clickCount = 0;
+                }
+            });
+        });
+    });
+</script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    
+ 	  <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>

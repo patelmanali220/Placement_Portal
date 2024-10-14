@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Details</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Alumni Details</h4>
+        </div>
+        <div class="card-body">
+            <h5>Personal Information</h5>
+            <p><strong>Name:</strong> <span id="fullName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+
+            <h5>Educational Background</h5>
+            <p><strong>Degree(s) Earned:</strong> <span id="degree"></span></p>
+            <p><strong>Major/Field of Study:</strong> <span id="major"></span></p>
+            <p><strong>Graduation Year:</strong> <span id="graduationYear"></span></p>
+
+            <h5>Current Professional Information</h5>
+            <p><strong>Current Employer:</strong> <span id="employer"></span></p>
+            <p><strong>Job Title:</strong> <span id="jobTitle"></span></p>
+            <p><strong>Company Website:</strong> <a id="companyWebsite" href="#" target="_blank"></a></p>
+            <p><strong>Company LinkedIn Page:</strong> <a id="linkedin" href="#" target="_blank"></a></p>
+
+            <!-- Navigation Links -->
+            <div class="mt-4">
+                <a href="#" id="updateLink" class="btn btn-warning">Update</a>
+                <a href="#" id="deleteLink" class="btn btn-danger">Delete</a>
+                <a href="mailto:?subject=Connect&body=Let's connect!" class="btn btn-success">Connect</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const storedData = localStorage.getItem('alumniData');
+        if (!storedData) {
+            window.location.href = 'index.html';
+        }
+
+        const alumniData = JSON.parse(storedData);
+
+        const fullName = `${alumniData.firstName} ${alumniData.middleName} ${alumniData.lastName}`;
+        document.getElementById('fullName').textContent = fullName;
+        document.getElementById('email').textContent = alumniData.email;
+        document.getElementById('phone').textContent = alumniData.phone;
+        document.getElementById('degree').textContent = alumniData.degree;
+        document.getElementById('major').textContent = alumniData.major;
+        document.getElementById('graduationYear').textContent = alumniData.graduationYear;
+        document.getElementById('employer').textContent = alumniData.employer;
+        document.getElementById('jobTitle').textContent = alumniData.jobTitle;
+
+        const companyWebsiteElement = document.getElementById('companyWebsite');
+        companyWebsiteElement.textContent = alumniData.companyWebsite;
+        companyWebsiteElement.href
